@@ -13,7 +13,7 @@ df = pd.read_csv('banned_providers_final.csv')
 merged_df = pd.read_csv('banned_providers_merged_lat.csv')
 
 # Data preprocessing and visualization
-st.title('Interactive Dashboard of Suspended and Ineligible CalHHS Providers')
+st.title('Interactive Dashboard of Suspended and Ineligible California DHCS Providers')
 
 # Display a slider for selecting a year range
 year_range = st.slider(
@@ -32,7 +32,7 @@ merged_df = merged_df[merged_df['Year'].between(year_range[0], year_range[1])]
 markdown_text = f"""
 ## Suspended/Ineligible Providers by year of suspension ({year_range[0]} to {year_range[1]})
 
-The line chart below shows the total counts of suspended/ineligible providers per year. 
+The line chart below shows the total counts of providers suspended by the California Department of Health Care Services providers by year of suspension. 
 
 Use the slider above to adjust the range of years displayed.
 """
