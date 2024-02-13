@@ -32,7 +32,7 @@ merged_df = merged_df[merged_df['Year'].between(year_range[0], year_range[1])]
 markdown_text = f"""
 ## Suspended/Ineligible Providers by year of suspension ({year_range[0]} to {year_range[1]})
 
-The line chart below shows the total counts of providers suspended by the California Department of Health Care Services providers by year of suspension. 
+The line chart below shows the total counts of providers suspended by the California Department of Health Care Services by year of suspension. 
 
 Use the slider above to adjust the range of years displayed.
 """
