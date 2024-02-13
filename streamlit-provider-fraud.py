@@ -95,9 +95,9 @@ st.altair_chart(provider_types_bar, use_container_width=True)
 markdown_text = f"""
     ## Interactive Comparison of Top {num_provider_types} Suspended/Ineligible Provider Types ({year_range[0]} to {year_range[1]})
     
-    Remember, you can edit the number of provider types shown in the chart in the field above the previous bar chart.
+    Remember, you can edit the number of provider types using the field above the previous bar chart.
     
-    Hover over a line to view detailed counts for each provider type by year. Zoom in with your mouse's scroll wheel.
+    Hover over a line to view the counts for each provider type by year. Zoom in with your mouse's scroll wheel.
 """
 
 # Display the dynamic markdown
