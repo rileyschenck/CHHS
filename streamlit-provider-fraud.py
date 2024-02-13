@@ -97,7 +97,7 @@ markdown_text = f"""
     
     Remember, you can edit the number of provider types using the field above the previous bar chart.
     
-    Hover over a line to view the counts for each provider type by year. Zoom in with your mouse's scroll wheel.
+    Hover over a line to view the counts for each provider type by year. Zoom in and out with your mouse's scroll wheel.
 """
 
 # Display the dynamic markdown
@@ -148,7 +148,7 @@ markdown_text = f"""
     The map below shows the geographical distribution of banned providers by zip code, 
     with circle sizes representing the count of banned providers for each zip code. 
     
-    You can zoom in and out with your mouse's scroll wheel, and click and drag to change location.
+    Zoom in and out with your mouse's scroll wheel, and click and drag to change location.
 """
 
 # Display the dynamic markdown
