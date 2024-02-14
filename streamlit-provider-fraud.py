@@ -63,6 +63,8 @@ markdown_text = f"""
 This bar chart ranks the top suspended/ineligible provider types over the year range indicated above.
 
 Change the number of provider types to compare by entering a new number in the field below, which will automatically update the following line chart.
+
+Hover over a bar with your mouse to display the full Provider Type name and count.
 """
 
 # Display the dynamic markdown
