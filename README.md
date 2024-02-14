@@ -1,4 +1,4 @@
-## Little project to create an interactive Streamlit dashboard with data from providers who have been suspended by the California Department of Health Care Services.
+## Interactive Streamlit dashboard with data from providers who have been suspended by the California Department of Health Care Services.
 
 View the Streamlit app here: https://chhs-suspended-providers.streamlit.app/
 
