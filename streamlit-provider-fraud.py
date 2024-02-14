@@ -13,7 +13,8 @@ df = pd.read_csv('banned_providers_final.csv')
 merged_df = pd.read_csv('banned_providers_merged_lat.csv')
 
 # Data preprocessing and visualization
-st.title('Interactive Dashboard of Suspended and Ineligible California DHCS Providers')
+st.title('Interactive Dashboard of 21,635 Suspended and Ineligible California DHCS Providers')
+
 
 # Display a slider for selecting a year range
 year_range = st.slider(
@@ -148,7 +149,9 @@ markdown_text = f"""
     The map below shows the geographical distribution of banned providers by zip code, 
     with circle sizes representing the count of banned providers for each zip code. 
     
-    Zoom in and out with your mouse's scroll wheel, and click and drag to change location.
+    Significant data cleaning was required to extract 9,760 zip codes from the list's address field and then find an additional 8,686 zip codes for addresses that were missing them by querying an API. 3,190 of the Suspended/Ineleigible providers aren't visualized here because I was unable to find zip codes for their addresses with the API. You may review my data cleaning Jupyter Notebook in the project's Github repository: https://github.com/rileyschenck/Visualize-CDHCS-provider-suspensions 
+    
+    Zoom in and out with your mouse's scroll wheel, and click and drag to change location in the Folium visualization.
 """
 
 # Display the dynamic markdown
@@ -170,7 +173,7 @@ for idx, row in zip_counts.iterrows():
         fill=True,
         fill_color='blue',
         fill_opacity=0.2,
-        tooltip=f"Postal Code: {row['postal code']}<br>City: {row['province_or_county']}<br>Counts: {row['counts']}"
+        tooltip=f"Postal Code: {row['postal code']}<br>County: {row['province_or_county']}<br>Counts: {row['counts']}"
     ).add_to(ca_map)
 
 # Display the map in Streamlit
